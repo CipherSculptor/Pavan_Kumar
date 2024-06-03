@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P Pavan Kumar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b6da2ec2ec.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/PAVAN .KUMAR.png " class="logo" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#mywork">My Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div>
+                <div class="header-text">
+                    <p>Full-Stack Developer</p>
+                    <h1 >Hi, I'm <span>Pavan Kumar</span><br>Welcome to my website</h1>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-------------------About Me-------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user_image2.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="describtion">Myself Pavan Kumar from Bengaluru Currently purscuing my B.Tech[3rd Year] in ECE in Vellore Institute of Technology[Vellore] with Aggregate CGPA of 7.97.I am very interested in purscuing my carrier as a Full-Stack Developer in repuated companies.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Font-end/Back-end basis</li>
+                            <li><span>Antenna Design</span><br>Designing Antenna using HFSS</li>
+                            <li><span>IoT Developer</span><br>Designing/Integrating Sensors for Real-World Application.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024-Current</span><br>Research Paper on leukemia Detection using CSRR</li>
+                            <li><span>2023-July </span><br>Internship in Maven Silicon - Bengaluru</li>
+                            <li><span>2021-2023</span><br>ECE Tech Head in IETE Chapter - Vellore</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-Current</span><br>B.Tech in ECE from VIT Vellore</li>
+                            <li><span>2019-2021 </span><br>Sri Chaitanya PU College Bengaluru</li>
+                            <li><span>20218-2019</span><br>Sri Chitanya Techno School Bengaluru</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------portfolio---------->
+    <div id="mywork">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/file.jpg">
+                    <div class="layer">
+                        <h3>Research Paper</h3>
+                        <p>This Paper is about detection of early Blood Cancer using CSRR Antenna in non-invasive method.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/web_work.jpeg">
+                    <div class="layer">
+                        <h3>Web Development</h3>
+                        <p>I have worked on building my own Portfolio using HTML,CSS and JavaScript and Reactjs,Bootstrap as the java
+                        frameworks.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/iot_work.jpeg">
+                  
+                    <div class="layer">
+                        <h3>IoT Project</h3>
+                        <p>I have worked on Smart Agriculture System using Node MCU, Soil Moisture sensor, Ph level detector.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!------------Contact--------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>pavankumar02167@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+91-7975939422</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/pavan-kumar-22d05m2002y/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="P Pavan Kumar Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="your email" required>
+                        <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright © Pavan. Made with ❤️ by Pavan Kumar</p>
+        </div>
+    </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+             for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemeu=document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+                sidemeu.style.right = "-200px";
+            }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwrB_eIWSvjIgKvBtUbQiSXnzvXmZDBSmuZXnK8ZDuE--_FuP2ljDWrYbTnJAjn_-7ZMA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById('msg');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML ="Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
